@@ -17,6 +17,7 @@ import {reset} from "./gulp/tasks/reset.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { server } from "./gulp/tasks/server.js";
 import { js } from "./gulp/tasks/js.js";
+import { images } from "./gulp/tasks/images.js";
 
 
 // Функция для наблюдения
@@ -25,9 +26,10 @@ function watch(){
     gulp.watch(path.watch.html, html)
     gulp.watch(path.watch.scss, scss)
     gulp.watch(path.watch.js, js)
+    gulp.watch(path.watch.images, images)
 }
 
-const mainTasks = gulp.parallel(copy, html, scss, js)
+const mainTasks = gulp.parallel(copy, html, scss, js, images)
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watch,server));
 
