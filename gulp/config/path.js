@@ -7,16 +7,19 @@ const scrFolder = `./src`;
 
 export const path = {
     build: {
+        js : `${buildFolder}/js/`,
         css : `${buildFolder}/css/`,
         html: `${buildFolder}/`,
         files: `${buildFolder}/files/`
     },
     src: {
+        js : `${scrFolder}/js/main.js`,
         scss: `${scrFolder}/scss/style.scss`,
         html: `${scrFolder}/*.html`,
         files: `${scrFolder}/files/**/*.*`,
     },
     watch: {
+        js : `${scrFolder}/js/**/*.js`,
         scss: `${scrFolder}/scss/**/*.scss`,
         html: `${scrFolder}/**/*.html`,
         files: `${scrFolder}/files/**/*.*`,
