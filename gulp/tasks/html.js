@@ -6,4 +6,5 @@ export const html = () => {
         .pipe(fileinclude())
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(app.gulp.dest(app.path.build.html))
+        .pipe(app.plugins.browserSync.stream())
 }
