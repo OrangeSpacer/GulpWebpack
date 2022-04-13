@@ -10,6 +10,7 @@ export const path = {
         js : `${buildFolder}/js/`,
         images: `${buildFolder}/img`,
         css : `${buildFolder}/css/`,
+        fonts: `${buildFolder}/fonts`,
         html: `${buildFolder}/`,
         files: `${buildFolder}/files/`
     },
@@ -17,6 +18,7 @@ export const path = {
         js : `${scrFolder}/js/main.js`,
         images: `${scrFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
         scss: `${scrFolder}/scss/style.scss`,
+        fonts: `${scrFolder}/fonts/*`,
         html: `${scrFolder}/*.html`,
         files: `${scrFolder}/files/**/*.*`,
     },
@@ -24,6 +26,7 @@ export const path = {
         js : `${scrFolder}/js/**/*.js`,
         images: `${scrFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
         scss: `${scrFolder}/scss/**/*.scss`,
+        fonts: `${scrFolder}/fonts/*`,
         html: `${scrFolder}/**/*.html`,
         files: `${scrFolder}/files/**/*.*`,
     },
